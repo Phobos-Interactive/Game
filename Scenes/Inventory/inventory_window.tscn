@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=3 uid="uid://brakvtdctuq1t"]
+
+[ext_resource type="Script" path="res://Scenes/Inventory/inventory_window.gd" id="1_edmnk"]
+[ext_resource type="PackedScene" uid="uid://vvjtc7gdplu3" path="res://Scenes/Inventory/item_slot.tscn" id="1_mc1uh"]
+
+[node name="InventoryWindow" type="PanelContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 610.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_edmnk")
+item_slot = ExtResource("1_mc1uh")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_direction = 1
+layout_mode = 2
+
+[node name="LabelEquipamento" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 22
+text = "Equipamento"
+vertical_alignment = 1
+
+[node name="Equipamento" type="GridContainer" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+columns = 6
+
+[node name="LabelInventario" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 22
+text = "Inventário"
+vertical_alignment = 1
+
+[node name="Inventario" type="GridContainer" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+columns = 6
