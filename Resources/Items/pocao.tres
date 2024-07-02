@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Item" load_steps=5 format=3 uid="uid://cbbco3l48svc2"]
+
+[ext_resource type="Script" path="res://Resources/item.gd" id="1_k2btb"]
+[ext_resource type="Texture2D" uid="uid://3w2syib8l0it" path="res://Assets/spritesheet_48x48.png" id="1_kc2j5"]
+[ext_resource type="PackedScene" uid="uid://dosqi44kp5ume" path="res://Scenes/Items/pocao.tscn" id="2_7nq6r"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3i06x"]
+atlas = ExtResource("1_kc2j5")
+region = Rect2(624, 672, 48, 48)
+
+[resource]
+script = ExtResource("1_k2btb")
+name = "pocao"
+scene = ExtResource("2_7nq6r")
+icon = SubResource("AtlasTexture_3i06x")

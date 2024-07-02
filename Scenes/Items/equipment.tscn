@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://b3uh30lbo8x6k"]
+
+[ext_resource type="Texture2D" uid="uid://3w2syib8l0it" path="res://Assets/spritesheet_48x48.png" id="1_bityx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_je56w"]
+atlas = ExtResource("1_bityx")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7xo5r"]
+
+[node name="Equipment" type="StaticBody2D" groups=["equipment"]]
+collision_layer = 2
+collision_mask = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = SubResource("AtlasTexture_je56w")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.4, 0.4)
+shape = SubResource("RectangleShape2D_7xo5r")

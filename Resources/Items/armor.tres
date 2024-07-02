@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Item" load_steps=5 format=3 uid="uid://cw2fqh3uxemrv"]
+
+[ext_resource type="Texture2D" uid="uid://3w2syib8l0it" path="res://Assets/spritesheet_48x48.png" id="1_k7gyn"]
+[ext_resource type="Script" path="res://Resources/item.gd" id="1_xc0b0"]
+[ext_resource type="PackedScene" uid="uid://b3uh30lbo8x6k" path="res://Scenes/Items/equipment.tscn" id="2_nykoj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k440j"]
+atlas = ExtResource("1_k7gyn")
+region = Rect2(48, 0, 48, 48)
+
+[resource]
+script = ExtResource("1_xc0b0")
+name = "armor"
+scene = ExtResource("2_nykoj")
+icon = SubResource("AtlasTexture_k440j")

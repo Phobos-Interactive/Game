@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://vvjtc7gdplu3"]
+
+[ext_resource type="Script" path="res://Scenes/Inventory/item_slot.gd" id="1_tfta3"]
+[ext_resource type="Texture2D" uid="uid://3w2syib8l0it" path="res://Assets/spritesheet_48x48.png" id="2_bindh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s117q"]
+atlas = ExtResource("2_bindh")
+region = Rect2(0, 0, 768, 1056)
+
+[node name="ItemSlot" type="PanelContainer"]
+script = ExtResource("1_tfta3")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+texture = SubResource("AtlasTexture_s117q")
